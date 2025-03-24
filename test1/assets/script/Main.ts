@@ -21,7 +21,26 @@ export default class NewClass extends cc.Component {
     // onLoad () {}
 
     start() {
-        cc.log(this);
+        // cc.log(this);
+        // cc.log('sadaisdahsdiahsdia');   
+        // cc.assetManager.loadBundle()
+
+        //#region loadBundle
+
+        cc.assetManager.loadBundle('bunder1', null, (err, bundle:cc.AssetManager.Bundle) => 
+            // console.log(err)
+            bundle.load("buff/1",cc.SpriteFrame,(err1,asset:cc.SpriteFrame)=>{   
+                if(err1){
+                    return;
+                }
+                // cc.log(asset);
+                this.node.getComponent(cc.Sprite).spriteFrame = asset;
+
+            })
+
+        );
+
+        //#endregion
     }
 
     // update (dt) {}
