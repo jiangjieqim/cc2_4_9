@@ -6,7 +6,7 @@
         {
             "label": "compile",
             "command": "curl",
-            "args": ["http://localhost:7456/update-db"],
+            "args": ["http://localhost:7457/update-db"],
             "type":"shell",
             // "isShellCommand": true,
             "isBackground": true,

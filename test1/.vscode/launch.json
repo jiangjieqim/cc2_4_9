@@ -5,7 +5,7 @@
             "name": "Creator Debug: Launch Chrome",
             "type": "chrome",
             "request": "launch",
-            "url": "http://localhost:7456",
+            "url": "http://localhost:7457",
             "sourceMaps": true,
             "userDataDir": "${workspaceFolder}/.vscode/chrome",
             "diagnosticLogging": false,
