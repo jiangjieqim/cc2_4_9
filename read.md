@@ -65,3 +65,6 @@ Bundle 可设置不同的优先级，Creator 内置了 10 个优先级可选择�
     ↓
     onDestroy() (当组件/节点被销毁)
 
+
+
+BlockInputEvent  
