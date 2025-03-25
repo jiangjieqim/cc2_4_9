@@ -1,0 +1,39 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile",
+            "command": "curl",
+            "args": [
+                "http://localhost:7456/update-db"
+            ],
+            "type": "shell",
+            "isBackground": true,
+            "group": "build",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "commit script",
+            "type": "shell",
+            "command": "TortoiseProc.exe /command:commit /path:%cd%/assets/scripts /closeonend: 0 /logmsg .",
+            "problemMatcher": []
+        },
+        {
+            "label": "copy tasks",
+            "type": "shell",
+            "command": "copy .vscode\\tasks.json D:\\github\\cc2_4_9\\template\\tasks.json",
+            "problemMatcher": []
+        },
+        {
+            "label": "svn up...",
+            "type": "shell",
+            "command": "svn up",
+            "problemMatcher": []
+        },
+    ]
+}
