@@ -70,5 +70,5 @@ Bundle 可设置不同的优先级，Creator 内置了 10 个优先级可选择�
 BlockInputEvent  
 
 自动图集  
-`D:\zzqx\trunk\client\assets\bundles\common\plist\kuang`  
+`zzqx\trunk\client\assets\bundles\common\plist\kuang`  
 
