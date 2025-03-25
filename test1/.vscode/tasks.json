@@ -17,11 +17,17 @@
             },
         },
         {
-            "label": "commit file",
+            "label": "commit {file}",
             "type": "shell",
             "command": "TortoiseGitProc.exe /command:commit /path:${file}  /closeonend:0 /logmsg:.",
             "problemMatcher": []
             // %time%-message_for_file:
+        },
+        {
+            "label": "chrome ${file}",
+            "type": "shell",
+            "command":"echo off & cd ../../ & cd github/jjqmdlib/cmd & call opendoc ${file}",
+            "problemMatcher": []
         }
     ]
 }
