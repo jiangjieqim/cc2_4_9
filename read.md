@@ -1,3 +1,11 @@
+[调试端口修改](#调试端口修改)  
+[创建Prefab的基本方法](#创建Prefab的基本方法)  
+[CocosInspector安装及使用](#CocosInspector安装及使用)  
+[组件生命周期](#组件生命周期)  
+
+
+# 调试端口修改
+
 debugport:  
 
 Editor Window--->web pre port-->7457  
@@ -39,7 +47,21 @@ Bundle 可设置不同的优先级，Creator 内置了 10 个优先级可选择�
 
 {h}cocos creator的UI调试{!h}   
 
-# Cocos Inspector安装及使用
+# CocosInspector安装及使用
 目录: \github\cc2_4_9\test1\packages\cocos_inspector  
 使用: Extension->Cocos Inspector->preview Mode   
+
+# 组件生命周期
+
+    组件创建
+    ↓
+    onLoad() → (如果激活) → onEnable()
+    ↓
+    start() (仅在第一次激活前)
+    ↓
+    循环: update() → lateUpdate()
+    ↓
+    onDisable() (当组件/节点被禁用)
+    ↓
+    onDestroy() (当组件/节点被销毁)
 
