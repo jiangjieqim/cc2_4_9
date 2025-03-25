@@ -72,3 +72,8 @@ BlockInputEvent
 自动图集  
 `zzqx\trunk\client\assets\bundles\common\plist\kuang`  
 
+文档:`zzqx\trunk\client\assets\bundles\bgs`背景色  
+
+
+如果编辑报错:`删除项目library local temp文件夹`   
+
