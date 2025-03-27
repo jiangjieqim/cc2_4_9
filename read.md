@@ -78,3 +78,6 @@ BlockInputEvent
 如果编辑报错:`删除项目library local temp文件夹`   
 
 {file}github/cc2_4_9/template/loadResource.ts{!file}
+
+
+协议定义:`D:\zzqx\trunk\common\protobuf`
