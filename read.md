@@ -2,6 +2,7 @@
 [创建Prefab的基本方法](#创建Prefab的基本方法)  
 [CocosInspector安装及使用](#CocosInspector安装及使用)  
 [组件生命周期](#组件生命周期)  
+[工作流程](#工作流程)  
 
 
 # 调试端口修改
@@ -65,6 +66,8 @@ Bundle 可设置不同的优先级，Creator 内置了 10 个优先级可选择�
     ↓
     onDestroy() (当组件/节点被销毁)
 
+# 工作流程
+{h}https://docs.cocos.com/creator/2.2/manual/zh/asset-workflow/{!h}
 
 
 BlockInputEvent  
@@ -81,3 +84,4 @@ BlockInputEvent
 
 
 协议定义:`D:\zzqx\trunk\common\protobuf`
+
