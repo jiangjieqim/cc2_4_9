@@ -7,8 +7,8 @@
 
 const { ccclass, property } = cc._decorator;
 
-// @ccclass
-export default class NewClass extends cc.Component {
+@ccclass
+export default class Main extends cc.Component {
 
     // @property(cc.Label)
     // label: cc.Label = null;
@@ -35,6 +35,10 @@ export default class NewClass extends cc.Component {
     //     }
     // }
 
+    private onEvtTest(obj){
+        cc.log(JSON.stringify(obj));
+
+    }
 
 
     start() {
@@ -58,6 +62,13 @@ export default class NewClass extends cc.Component {
         //     // cc
         // })
 
+
+    
+        let cc1 = new cc.EventTarget();
+        cc1.on("testEvent",this.onEvtTest,this)
+
+
+        cc1.emit("testEvent",{a:"name1",id:2})
 
         // let i = 0;
         cc.assetManager.loadBundle('bunder1', null, (err, bundle:cc.AssetManager.Bundle)=>{
